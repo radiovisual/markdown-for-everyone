@@ -1,7 +1,7 @@
 # Markdown For Everyone
 
 Use this cheatsheet as a way of demonstrating specific markdown features. View this file in "raw" plaintext view to see the specific 
-markdown formatting. This cheatsheet is intially based off of [this nice gist](https://gist.githubusercontent.com/jonschlinkert/5854601/raw/4cb53c02691e32930865fa2dafecf8ed359e057c/markdown.md) by [jonschlinkert](https://github.com/jonschlinkert), but will soon evolve to read like a "Markdown for Dummies".
+markdown formatting. This cheatsheet is intially based off of [this nice gist](https://gist.githubusercontent.com/jonschlinkert/5854601/raw/4cb53c02691e32930865fa2dafecf8ed359e057c/markdown.md) by [jonschlinkert](https://github.com/jonschlinkert), but will soon evolve to read like a "Markdown for Dummies."
 
 # Typography 
 

@@ -99,7 +99,7 @@ _rendered as italicized text with underscores_
 
 renders to:
 
-_rendered as italicized text_  
+_rendered as italicized text with underscores_  
 *rendered as italicized text with single astericks*
 
 ### strikethrough

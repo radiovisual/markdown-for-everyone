@@ -77,7 +77,7 @@ renders to this HTML:
 ### Bold
 For emphasizing a snippet of text with a heavier font-weight.
 
-To create bold (emphasized) text, use double underscores or double astericks:
+To create bold text, use double underscores or double astericks:
 
 ``` markdown
 **rendered as bold text with double underscores**

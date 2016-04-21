@@ -86,8 +86,8 @@ To create bold text, use double underscores or double astericks:
 
 which renders to:
 
-**rendered as bold text with double underscores**
-**rendered as bold text with double astericks**
+**rendered as bold text with double underscores**  
+**rendered as bold text with double astericks**  
 
 
 ### Italics

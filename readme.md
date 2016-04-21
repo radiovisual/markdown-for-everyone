@@ -36,11 +36,11 @@ Renders to:
 
 The HTML `<hr>` element is for creating a "thematic break" between paragraph-level elements. In markdown, you can create a `<hr>` with any of the following:
 
-* `___`: three consecutive underscores
-* `---`: three consecutive dashes
-* `***`: three consecutive asterisks
+`___`: three consecutive underscores  
+`---`: three consecutive dashes  
+`***`: three consecutive asterisks
 
-renders to:
+which renders to:
 
 ___
 
@@ -51,26 +51,24 @@ ___
 
 <br>
 <br>
-<br>
 
 
 ## Body Copy 
 
-Body copy written as normal, plain text will be wrapped with `<p></p>` tags in the rendered HTML.
+Body copy written as normal, plain text will be wrapped with paragraph tags `<p></p>` in the rendered HTML.
 
 So this body copy:
 
 ``` markdown
-Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.
+Lorem ipsum dolor sit amet, graecis denique ei vel.
 ```
 renders to this HTML:
 
 ``` html
-<p>Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.</p>
+<p>Lorem ipsum dolor sit amet, graecis denique ei vel.</p>
 ```
 
 
-<br>
 <br>
 <br>
 
@@ -92,19 +90,20 @@ renders to:
 ### Italics
 For emphasizing a snippet of text with italics.
 
-The following snippet of text is _rendered as italicized text_.
+The following snippets of text are _rendered as italicized text_.
 
 ``` markdown
-_rendered as italicized text_
+_rendered as italicized text with underscores_
+*rendered as italicized text with single astericks*
 ```
 
 renders to:
 
-_rendered as italicized text_
-
+_rendered as italicized text_  
+*rendered as italicized text with single astericks*
 
 ### strikethrough
-In GFM you can do strickthroughs. 
+In Github-Flavored Markdown (GFM) you can do strikethroughs by wrapping the text with double tildes: 
 
 ``` markdown
 ~~Strike through this text.~~
@@ -116,8 +115,69 @@ Which renders to:
 
 <br>
 <br>
-<br>
 
+
+## Links
+
+### Basic link
+
+``` markdown
+[Assemble](http://assemble.io)
+```
+
+Renders to (hover over the link, there is no tooltip):
+
+[Assemble](http://assemble.io)
+
+HTML:
+
+``` html
+<a href="http://assemble.io">Assemble</a>
+```
+
+
+### Add a title
+
+``` markdown
+[Upstage](https://github.com/upstage/ "Visit Upstage!")
+```
+
+Renders to (hover over the link, there should be a tooltip):
+
+[Upstage](https://github.com/upstage/ "Visit Upstage!")
+
+HTML:
+
+``` html
+<a href="https://github.com/upstage/" title="Visit Upstage!">Upstage</a>
+```
+
+### Named Anchors
+
+Named anchors enable you to jump to the specified anchor point on the same page. For example, each of these chapters:
+
+```markdown
+# Table of Contents
+  * [Chapter 1](#chapter-1)
+  * [Chapter 2](#chapter-2)
+  * [Chapter 3](#chapter-3)
+```
+will jump to these sections:
+
+```markdown
+## Chapter 1 <a id="chapter-1"></a>
+Content for chapter one.
+
+## Chapter 2 <a id="chapter-2"></a>
+Content for chapter one.
+
+## Chapter 3 <a id="chapter-3"></a>
+Content for chapter one.
+```
+**NOTE** that specific placement of the anchor tag seems to be arbitrary. They are placed inline here since it seems to be unobtrusive, and it works.
+
+<br>
+<br>
 
 ## Blockquotes
 For quoting blocks of content from another source within your document.
@@ -155,7 +215,6 @@ Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi.
 
 <br>
 <br>
-<br>
 
 
 ## Lists
@@ -176,31 +235,19 @@ For example
 ``` markdown
 + Lorem ipsum dolor sit amet
 + Consectetur adipiscing elit
-+ Integer molestie lorem at massa
-+ Facilisis in pretium nisl aliquet
 + Nulla volutpat aliquam velit
   - Phasellus iaculis neque
   - Purus sodales ultricies
-  - Vestibulum laoreet porttitor sem
-  - Ac tristique libero volutpat at
 + Faucibus porta lacus fringilla vel
-+ Aenean sit amet erat nunc
-+ Eget porttitor lorem
 ```
 Renders to:
 
 + Lorem ipsum dolor sit amet
 + Consectetur adipiscing elit
-+ Integer molestie lorem at massa
-+ Facilisis in pretium nisl aliquet
 + Nulla volutpat aliquam velit
   - Phasellus iaculis neque
   - Purus sodales ultricies
-  - Vestibulum laoreet porttitor sem
-  - Ac tristique libero volutpat at
 + Faucibus porta lacus fringilla vel
-+ Aenean sit amet erat nunc
-+ Eget porttitor lorem
 
 ### Ordered
 
@@ -211,10 +258,6 @@ A list of items in which the order of items does explicitly matter.
 2. Consectetur adipiscing elit
 3. Integer molestie lorem at massa
 4. Facilisis in pretium nisl aliquet
-5. Nulla volutpat aliquam velit
-6. Faucibus porta lacus fringilla vel
-7. Aenean sit amet erat nunc
-8. Eget porttitor lorem
 ```
 Renders to:
 
@@ -222,10 +265,6 @@ Renders to:
 2. Consectetur adipiscing elit
 3. Integer molestie lorem at massa
 4. Facilisis in pretium nisl aliquet
-5. Nulla volutpat aliquam velit
-6. Faucibus porta lacus fringilla vel
-7. Aenean sit amet erat nunc
-8. Eget porttitor lorem
 
 **TIP**: If you just use `1.` for each number, GitHub will automatically number each item. For example:
 
@@ -234,25 +273,93 @@ Renders to:
 1. Consectetur adipiscing elit
 1. Integer molestie lorem at massa
 1. Facilisis in pretium nisl aliquet
-1. Nulla volutpat aliquam velit
-1. Faucibus porta lacus fringilla vel
-1. Aenean sit amet erat nunc
-1. Eget porttitor lorem
 ```
 
 Renders to:
 
 1. Lorem ipsum dolor sit amet
-2. Consectetur adipiscing elit
-3. Integer molestie lorem at massa
-4. Facilisis in pretium nisl aliquet
-5. Nulla volutpat aliquam velit
-6. Faucibus porta lacus fringilla vel
-7. Aenean sit amet erat nunc
-8. Eget porttitor lorem
+1. Consectetur adipiscing elit
+1. Integer molestie lorem at massa
+1. Facilisis in pretium nisl aliquet
 
 
 <br>
+<br>
+
+
+## Tables
+Tables are created by adding pipes as dividers between each cell, and by adding a line of dashes (also separated by bars) beneath the header. Note that the pipes do not need to be vertically aligned.
+
+
+``` markdown
+| Option | Description |
+| ------ | ----------- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |
+```
+
+Renders to:
+
+| Option | Description |
+| ------ | ----------- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |
+
+
+### Right aligned text
+
+Adding a colon on the right side of the dashes below any heading will right align text for that column.
+
+``` markdown
+| Option | Description |
+| ------:| -----------:|
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |
+```
+
+| Option | Description |
+| ------:| -----------:|
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |
+
+
+<br>
+<br>
+
+
+## Images
+Images have a similar syntax to links but include a prepended exclamation point.
+
+``` markdown
+![Minion](http://octodex.github.com/images/minion.png)
+```
+![Minion](http://octodex.github.com/images/minion.png)
+
+or
+``` markdown
+![Alt text](http://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
+```
+![Alt text](http://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
+
+Like links, Images also have a footnote style syntax
+
+``` markdown
+![Alt text][id]
+```
+![Alt text][id]
+
+With a reference later in the document defining the URL location:
+
+[id]: http://octodex.github.com/images/dojocat.jpg  "The Dojocat"
+
+
+    [id]: http://octodex.github.com/images/dojocat.jpg  "The Dojocat"
+
+
 <br>
 <br>
 
@@ -260,13 +367,17 @@ Renders to:
 ## Code
 
 ### Inline code
-Wrap inline snippets of code with `` ` ``.
+Wrap inline snippets of code with a single accent grave character (aka "tick mark") `` ` ``.
 
-For example, `<section></section>` should be wrapped as "inline".
+For example, this markup:
 
 ``` html
-For example, `<section></section>` should be wrapped as "inline".
+Render these section tags as inline code: `<section></section>`
 ```
+
+will render to:
+
+Render these section tags as inline code: `<section></section>`
 
 
 ### Indented code
@@ -358,145 +469,3 @@ grunt.initConfig({
   }
 };
 ```
-
-<br>
-<br>
-<br>
-
-## Tables
-Tables are created by adding pipes as dividers between each cell, and by adding a line of dashes (also separated by bars) beneath the header. Note that the pipes do not need to be vertically aligned.
-
-
-``` markdown
-| Option | Description |
-| ------ | ----------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
-```
-
-Renders to:
-
-| Option | Description |
-| ------ | ----------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
-
-
-### Right aligned text
-
-Adding a colon on the right side of the dashes below any heading will right align text for that column.
-
-``` markdown
-| Option | Description |
-| ------:| -----------:|
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
-```
-
-| Option | Description |
-| ------:| -----------:|
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
-
-
-<br>
-<br>
-<br>
-
-
-## Links
-
-### Basic link
-
-``` markdown
-[Assemble](http://assemble.io)
-```
-
-Renders to (hover over the link, there is no tooltip):
-
-[Assemble](http://assemble.io)
-
-HTML:
-
-``` html
-<a href="http://assemble.io">Assemble</a>
-```
-
-
-### Add a title
-
-``` markdown
-[Upstage](https://github.com/upstage/ "Visit Upstage!")
-```
-
-Renders to (hover over the link, there should be a tooltip):
-
-[Upstage](https://github.com/upstage/ "Visit Upstage!")
-
-HTML:
-
-``` html
-<a href="https://github.com/upstage/" title="Visit Upstage!">Upstage</a>
-```
-
-### Named Anchors
-
-Named anchors enable you to jump to the specified anchor point on the same page. For example, each of these chapters:
-
-```markdown
-# Table of Contents
-  * [Chapter 1](#chapter-1)
-  * [Chapter 2](#chapter-2)
-  * [Chapter 3](#chapter-3)
-```
-will jump to these sections:
-
-```markdown
-## Chapter 1 <a id="chapter-1"></a>
-Content for chapter one.
-
-## Chapter 2 <a id="chapter-2"></a>
-Content for chapter one.
-
-## Chapter 3 <a id="chapter-3"></a>
-Content for chapter one.
-```
-**NOTE** that specific placement of the anchor tag seems to be arbitrary. They are placed inline here since it seems to be unobtrusive, and it works.
-
-
-<br>
-<br>
-<br>
-
-
-## Images
-Images have a similar syntax to links but include a preceding exclamation point.
-
-``` markdown
-![Minion](http://octodex.github.com/images/minion.png)
-```
-![Minion](http://octodex.github.com/images/minion.png)
-
-or
-``` markdown
-![Alt text](http://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
-```
-![Alt text](http://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
-
-Like links, Images also have a footnote style syntax
-
-``` markdown
-![Alt text][id]
-```
-![Alt text][id]
-
-With a reference later in the document defining the URL location:
-
-[id]: http://octodex.github.com/images/dojocat.jpg  "The Dojocat"
-
-
-    [id]: http://octodex.github.com/images/dojocat.jpg  "The Dojocat"

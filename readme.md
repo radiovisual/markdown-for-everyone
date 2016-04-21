@@ -1,7 +1,6 @@
 # Markdown For Everyone
 
-Use this cheatsheet as a way of demonstrating specific markdown features. View this file in "raw" plaintext view to see the specific 
-markdown formatting. This cheatsheet is intially based off of [this nice gist](https://gist.githubusercontent.com/jonschlinkert/5854601/raw/4cb53c02691e32930865fa2dafecf8ed359e057c/markdown.md) by [jonschlinkert](https://github.com/jonschlinkert), but will soon evolve to read like a "Markdown for Dummies."
+Use this cheatsheet as a way of demonstrating specific Github-flavored Markdown (GFM) features. View this file in "raw" plaintext view to see the specific markdown formatting. This cheatsheet is intially based off of [this nice gist](https://gist.githubusercontent.com/jonschlinkert/5854601/raw/4cb53c02691e32930865fa2dafecf8ed359e057c/markdown.md) by [jonschlinkert](https://github.com/jonschlinkert), but will soon evolve to read like a "Markdown for Dummies."
 
 # Typography 
 
@@ -78,26 +77,30 @@ renders to this HTML:
 ### Bold
 For emphasizing a snippet of text with a heavier font-weight.
 
-The following snippet of text is **rendered as bold text**.
+To create bold (emphasized) text, use double underscores or double astericks:
 
 ``` markdown
-**rendered as bold text**
+**rendered as bold text with double underscores**
+**rendered as bold text with double astericks**
 ```
-renders to:
 
-**rendered as bold text**
+which renders to:
+
+**rendered as bold text with double underscores**
+**rendered as bold text with double astericks**
+
 
 ### Italics
 For emphasizing a snippet of text with italics.
 
-The following snippets of text are _rendered as italicized text_.
+The following snippets of text are _rendered as italicized text_ by wrapping either single underscores or single astericks:
 
 ``` markdown
 _rendered as italicized text with underscores_
 *rendered as italicized text with single astericks*
 ```
 
-renders to:
+which renders to:
 
 _rendered as italicized text with underscores_  
 *rendered as italicized text with single astericks*

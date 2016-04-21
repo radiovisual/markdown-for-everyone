@@ -27,7 +27,7 @@ Renders to:
 ##### h5 Heading
 ###### h6 Heading
 
-<br>
+
 <br>
 <br>
 
@@ -176,8 +176,10 @@ Content for chapter one.
 ```
 **NOTE** that specific placement of the anchor tag seems to be arbitrary. They are placed inline here since it seems to be unobtrusive, and it works.
 
+
 <br>
 <br>
+
 
 ## Blockquotes
 For quoting blocks of content from another source within your document.

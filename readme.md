@@ -2,7 +2,7 @@
 
 Markdown is an incredibly simple and hassle-free alternative to HTML. Markdown accomplishes the same thing as HTML, but Markdown uses a simple, easy-to-learn syntax that allows you to add a variety of styling options to your plain-text without all the hassle of opening and closing tags.
 
-Use this cheatsheet as a way of demonstrating specific Github-flavored Markdown (GFM) features. This cheatsheet was intially based off of [this nice gist](https://gist.githubusercontent.com/jonschlinkert/5854601/raw/4cb53c02691e32930865fa2dafecf8ed359e057c/markdown.md) by [jonschlinkert](https://github.com/jonschlinkert), but is evolving to read like a "Markdown for ~~Dummies~~ Everyone."
+Use this cheatsheet as a way of demonstrating specific Github-flavored Markdown (GFM) features. This cheatsheet was initially based off of [this nice gist](https://gist.githubusercontent.com/jonschlinkert/5854601/raw/4cb53c02691e32930865fa2dafecf8ed359e057c/markdown.md) by [jonschlinkert](https://github.com/jonschlinkert), but is evolving to read like a "Markdown for ~~Dummies~~ Everyone."
 
 You can alternatively view this file's [raw plaintext](https://raw.githubusercontent.com/radiovisual/markdown-for-everyone/master/readme.md) to see more of the specific markdown formatting used in this document.
 
@@ -83,33 +83,33 @@ renders to this HTML:
 ### Bold
 For emphasizing a snippet of text with a heavier font-weight.
 
-To create bold text, use double underscores or double astericks:
+To create bold text, use double underscores or double asterisks:
 
 ``` markdown
 **rendered as bold text with double underscores**
-**rendered as bold text with double astericks**
+**rendered as bold text with double asterisks**
 ```
 
 which renders to:
 
 **rendered as bold text with double underscores**  
-**rendered as bold text with double astericks**  
+**rendered as bold text with double asterisks**  
 
 
 ### Italics
 For emphasizing a snippet of text with italics.
 
-The following snippets of text are _rendered as italicized text_ by wrapping either single underscores or single astericks:
+The following snippets of text are _rendered as italicized text_ by wrapping either single underscores or single asterisks:
 
 ``` markdown
 _rendered as italicized text with underscores_
-*rendered as italicized text with single astericks*
+*rendered as italicized text with single asterisks*
 ```
 
 which renders to:
 
 _rendered as italicized text with underscores_  
-*rendered as italicized text with single astericks*
+*rendered as italicized text with single asterisks*
 
 ### strikethrough
 In Github-Flavored Markdown (GFM) you can do strikethroughs by wrapping the text with double tildes: 
@@ -480,3 +480,22 @@ grunt.initConfig({
   }
 };
 ```
+
+<br>
+<br>
+
+### Keyboard Keys
+
+Github-Flavored Markdown (GFM) allows you to render pretty keyboard keys which are particularly useful when instructing your readers on keyboard shortcuts, commands or hotkeys.
+
+For example, the following markdown can be used to display the shortcut for "Copy" and "Paste" on a Mac:
+
+```markdown
+To copy, press <kbd>Cmd</kbd> + <kbd>C</kbd>  
+To paste, press <kbd>Cmd</kbd> + <kbd>V</kbd>
+```
+
+Which renders to:
+
+To copy, press <kbd>Cmd</kbd> + <kbd>C</kbd>  
+To paste, press <kbd>Cmd</kbd> + <kbd>V</kbd>

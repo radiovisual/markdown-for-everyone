@@ -2,11 +2,10 @@
 
 Markdown is an incredibly simple and hassle-free alternative to HTML. Markdown accomplishes the same thing as HTML, but Markdown uses a simple, easy-to-learn syntax that allows you to add a variety of styling options to your plain-text without all the hassle of opening and closing tags.
 
-Use this cheatsheet as a way of demonstrating specific Github-flavored Markdown (GFM) features. Markdown used on Github differs slightly in it's feature set then Markdown used elsewhere, but once you learn the basics of Github-flavored Markdown, you are ready to write Markdown everywhere. 
+Use this cheatsheet as a way of demonstrating specific Markdown features. Because this document was written using Markdown, you can alternatively view this file's [raw plaintext](https://raw.githubusercontent.com/radiovisual/markdown-for-everyone/master/readme.md) to see more of the specific markdown formatting used in this document.
 
-This cheatsheet was initially based off of [this nice gist](https://gist.githubusercontent.com/jonschlinkert/5854601/raw/4cb53c02691e32930865fa2dafecf8ed359e057c/markdown.md) by [jonschlinkert](https://github.com/jonschlinkert), but is evolving to read like a "Markdown for ~~Dummies~~ Everyone."
+**Note:** Markdown used on Github resources differs slightly in its feature set then Markdown used elsewhere, but once you learn the basics of Github-flavored Markdown, you are ready to write Markdown everywhere. 
 
-You can alternatively view this file's [raw plaintext](https://raw.githubusercontent.com/radiovisual/markdown-for-everyone/master/readme.md) to see more of the specific markdown formatting used in this document.
 
 ---
 
@@ -41,7 +40,7 @@ You can alternatively view this file's [raw plaintext](https://raw.githubusercon
   - [Syntax Highlighting](#syntax-highlighting)
 - [Keyboard Keys](#keyboard-keys)
 - [Emojis](#emojis)
-
+- [Credits](#credits)
 ---
 
 
@@ -612,3 +611,11 @@ Which renders to:
 :hamburger: :pizza: :beer: :sushi: :tropical_drink:
 
 **Tip:** For a full list of supported emojis, check out [emoji-cheat-sheet.com](http://www.emoji-cheat-sheet.com/)
+
+
+<br>
+<br>
+
+### Credits
+
+This cheatsheet was initially inspired by [this nice gist](https://gist.githubusercontent.com/jonschlinkert/5854601/raw/4cb53c02691e32930865fa2dafecf8ed359e057c/markdown.md) by [jonschlinkert](https://github.com/jonschlinkert), but has since evolved with added content, in hopes to one day read like a "Markdown for ~~Dummies~~ Everyone."

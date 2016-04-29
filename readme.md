@@ -40,7 +40,8 @@ Use this cheatsheet as a way of demonstrating specific Markdown features. Becaus
   - [Syntax Highlighting](#syntax-highlighting)
 - [Keyboard Keys](#keyboard-keys)
 - [Emojis](#emojis)
-- [Credits](#credits)
+- [Credit](#credit)
+
 ---
 
 
@@ -471,7 +472,7 @@ Wrap inline snippets of code with a single accent grave character (aka "tick mar
 
 For example, this markup:
 
-``` html
+``` markdown
 Render these section tags as inline code: `<section></section>`
 ```
 
@@ -499,75 +500,60 @@ Or indent several lines of code by at least four spaces, as in:
 
 ### Block Code "Fences"
 
-Use "fences"  ```` ``` ```` to block in multiple lines of code. 
+Use "fences", which are made up of three accent grave marks (aka "tick marks")  ```` ``` ```` to block in multiple lines of code. Notice how the "fences" wrap the code with three accent graves at the start of the code block and three accent graves at the end of the code block: 
 
 <pre>
-``` html
-Sample text here...
+``` 
+This text is surrounded by a "fence", so it will get treated like a block of code.
+
 ```
 </pre>
 
+Which renders to:
 
 ```
-Sample text here...
-```
-
-HTML:
-
-``` html
-<pre>
-  <p>Sample text here...</p>
-</pre>
+This text is surrounded by a "fence", so it will get treated like a block of code.
 ```
 
 ### Syntax Highlighting
 
-GFM, or "GitHub Flavored Markdown" also supports syntax highlighting. To activate it, simply add the file extension of the language you want to use directly after the first code "fence", ` ``` js `, and syntax highlighting will automatically be applied in the rendered HTML. For example, to apply syntax highlighting to JavaScript code:
+GitHub-Flavored Markdown (GFM) also supports syntax highlighting. To activate it, simply add the file extension (or full name of the language) you want to use directly after the first code "fence", and language-specific syntax highlighting will automatically be applied in the rendered HTML.
+
+For example, to apply syntax highlighting to JavaScript code, both of these formats will render the exact same output:
 
 <pre>
 ``` javascript
-grunt.initConfig({
-  assemble: {
-    options: {
-      assets: 'docs/assets',
-      data: 'src/data/*.{json,yml}',
-      helpers: 'src/custom-helpers.js',
-      partials: ['src/partials/**/*.{hbs,md}']
-    },
-    pages: {
-      options: {
-        layout: 'default.hbs'
-      },
-      files: {
-        './': ['src/templates/pages/index.hbs']
-      }
-    }
-  }
-};
+// javascript code here ...
+```
+
+``` js
+// javascript code here ...
 ```
 </pre>
 
-Renders to:
+Here is a full example:
+<pre>
+``` javascript
+// javascript code here ...
+const b = stampit().init(function() {
+  const priv = 'b';
+  this.getB = () => {
+    return priv;
+  };
+});
+```
+</pre>
+
+Which renders to:
 
 ``` javascript
-grunt.initConfig({
-  assemble: {
-    options: {
-      assets: 'docs/assets',
-      data: 'src/data/*.{json,yml}',
-      helpers: 'src/custom-helpers.js',
-      partials: ['src/partials/**/*.{hbs,md}']
-    },
-    pages: {
-      options: {
-        layout: 'default.hbs'
-      },
-      files: {
-        './': ['src/templates/pages/index.hbs']
-      }
-    }
-  }
-};
+// javascript code here ...
+const b = stampit().init(function() {
+  const priv = 'b';
+  this.getB = () => {
+    return priv;
+  };
+});
 ```
 
 
@@ -616,6 +602,7 @@ Which renders to:
 <br>
 <br>
 
-### Credits
+
+### Credit
 
 This cheatsheet was initially inspired by [this nice gist](https://gist.githubusercontent.com/jonschlinkert/5854601/raw/4cb53c02691e32930865fa2dafecf8ed359e057c/markdown.md) by [jonschlinkert](https://github.com/jonschlinkert), but has since evolved with added content, in hopes to one day read like a "Markdown for ~~Dummies~~ Everyone."

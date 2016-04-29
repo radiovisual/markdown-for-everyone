@@ -40,7 +40,8 @@ Use this cheatsheet as a way of demonstrating specific Markdown features. Becaus
   - [Syntax Highlighting](#syntax-highlighting)
 - [Keyboard Keys](#keyboard-keys)
 - [Emojis](#emojis)
-- [Credits](#credits)
+- [Credit](#credit)
+
 ---
 
 
@@ -616,6 +617,7 @@ Which renders to:
 <br>
 <br>
 
-### Credits
+
+### Credit
 
 This cheatsheet was initially inspired by [this nice gist](https://gist.githubusercontent.com/jonschlinkert/5854601/raw/4cb53c02691e32930865fa2dafecf8ed359e057c/markdown.md) by [jonschlinkert](https://github.com/jonschlinkert), but has since evolved with added content, in hopes to one day read like a "Markdown for ~~Dummies~~ Everyone."

@@ -30,6 +30,7 @@ You can alternatively view this file's [raw plaintext](https://raw.githubusercon
   - [Ordered](#ordered)
 - [Tables](#tables)
   - [Right Aligned Text](#right-aligned-text)
+- [Task List](#task-list)
 - [Images](#images)
 - [Code](#code)
   - [Inline Code](#inline-code)
@@ -402,6 +403,26 @@ Adding a colon on the right side of the dashes below any heading will right alig
 | data   | path to data files to supply the data that will be passed into templates. |
 | engine | engine to be used for processing templates. Handlebars is the default. |
 | ext    | extension to be used for dest files. |
+
+
+<br>
+<br>
+
+## Task List
+Task lists are a handy way of making lists where items can be "checked" on or off. Like a "To-Do" List.
+To create a task list, you will use a hyphen, angle brackets and the letter "x". 
+
+So the following task list syntax:
+ 
+``` markdown
+- [ ] This item is unchecked
+- [x] This item is checked
+```
+
+will render to:
+
+- [ ] This item is unchecked
+- [x] This item is checked
 
 
 <br>

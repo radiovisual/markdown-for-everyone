@@ -14,6 +14,7 @@ You can alternatively view this file's [raw plaintext](https://raw.githubusercon
   - [Headings](#headings)
   - [Horizontal Rules](#horizontal-rules)
   - [Body Copy](#body-copy)
+  - [Linebreaks](#linebreaks)
   - [Empahsis](#emphasis)
       - [Bold](#bold)
       - [Italics](#italics)
@@ -104,6 +105,34 @@ renders to this HTML:
 ``` html
 <p>Lorem ipsum dolor sit amet, graecis denique ei vel.</p>
 ```
+
+
+<br>
+<br>
+
+
+## Linebreaks
+
+To add a linebreak to your body copy, you need to put **two spaces** at the end of the text where you want the linebreak to occur.
+
+So this body copy with two spaces at the end (spaces are being represented as '⃞'):
+
+``` markdown
+Putting two spaces at the end of this line ⃞⃞
+will cause this line to appear on the line below.  
+```
+renders to this HTML:
+
+``` html
+Putting two spaces at the end of this line <br/>will cause this line to appear on the line below. 
+```
+
+which will be seen in your markdown files as:
+
+Putting two spaces at the end of this line    
+will cause this line to appear on the line below.  
+
+**Note:** This "two spaces" trick often trips up new users of Markdown, because spaces are invisible, so the rule is not obvious when reading Markdown files.
 
 
 <br>

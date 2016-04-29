@@ -8,6 +8,37 @@ You can alternatively view this file's [raw plaintext](https://raw.githubusercon
 
 ---
 
+# Table of Contents
+
+- [Typography](#typography)
+  - [Headings](#headings)
+  - [Horizontal Rules](#horizontal-rules)
+  - [Body Copy](#body-copy)
+  - [Empahsis](#emphasis)
+      - [Bold](#bold)
+      - [Italics](#italics)
+      - [strikethrough](#strikethrough)
+- [Links](#links)
+  - [Basic link](#basic-link)
+  - [Add a title](#add-a-title)
+  - [Named Anchors](#named-anchors)
+- [Blockquotes](#blockquotes)
+- [Lists](#lists)
+  - [Unordered](#unordered)
+  - [Ordered](#ordered)
+- [Tables](#tables)
+  - [Right aligned text](#right-aligned-text)
+- [Images](#images)
+- [Code](#code)
+  - [Inline code](#inline-code)
+  - [Indented code](#indented-code)
+  - [Block code "fences"](#block-code-fences)
+  - [Syntax highlighting](#syntax-highlighting)
+- [Keyboard Keys](#keyboard-keys)
+
+---
+
+
 # Typography 
 
 ## Headings

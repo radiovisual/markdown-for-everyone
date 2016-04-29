@@ -2,7 +2,9 @@
 
 Markdown is an incredibly simple and hassle-free alternative to HTML. Markdown accomplishes the same thing as HTML, but Markdown uses a simple, easy-to-learn syntax that allows you to add a variety of styling options to your plain-text without all the hassle of opening and closing tags.
 
-Use this cheatsheet as a way of demonstrating specific Github-flavored Markdown (GFM) features. This cheatsheet was initially based off of [this nice gist](https://gist.githubusercontent.com/jonschlinkert/5854601/raw/4cb53c02691e32930865fa2dafecf8ed359e057c/markdown.md) by [jonschlinkert](https://github.com/jonschlinkert), but is evolving to read like a "Markdown for ~~Dummies~~ Everyone."
+Use this cheatsheet as a way of demonstrating specific Github-flavored Markdown (GFM) features. Markdown used on Github differs slightly in it's feature set then Markdown used elsewhere, but once you learn the basics of Github-flavored Markdown, you are ready to write Markdown everywhere. 
+
+This cheatsheet was initially based off of [this nice gist](https://gist.githubusercontent.com/jonschlinkert/5854601/raw/4cb53c02691e32930865fa2dafecf8ed359e057c/markdown.md) by [jonschlinkert](https://github.com/jonschlinkert), but is evolving to read like a "Markdown for ~~Dummies~~ Everyone."
 
 You can alternatively view this file's [raw plaintext](https://raw.githubusercontent.com/radiovisual/markdown-for-everyone/master/readme.md) to see more of the specific markdown formatting used in this document.
 

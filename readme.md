@@ -610,3 +610,5 @@ To add an emoji in GFM, just surround the emoji name with colons, like this:
 Which renders to:
 
 :hamburger: :pizza: :beer: :sushi: :tropical_drink:
+
+**Tip:** For a full list of supported emojis, check out [emoji-cheat-sheet.com](http://www.emoji-cheat-sheet.com/)

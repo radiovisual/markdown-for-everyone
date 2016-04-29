@@ -40,6 +40,7 @@ You can alternatively view this file's [raw plaintext](https://raw.githubusercon
   - [Block Code "Fences"](#block-code-fences)
   - [Syntax Highlighting](#syntax-highlighting)
 - [Keyboard Keys](#keyboard-keys)
+- [Emojis](#emojis)
 
 ---
 
@@ -570,8 +571,10 @@ grunt.initConfig({
 };
 ```
 
+
 <br>
 <br>
+
 
 ### Keyboard Keys
 
@@ -588,3 +591,22 @@ Which renders to:
 
 To copy, press <kbd>Cmd</kbd> + <kbd>C</kbd>  
 To paste, press <kbd>Cmd</kbd> + <kbd>V</kbd>
+
+
+<br>
+<br>
+
+
+### Emojis
+
+Github-Flavored Markdown (GFM) supports Emojis! :bowtie: :heart_eyes: :smile: :boom: :dog2:
+
+To add an emoji in GFM, just surround the emoji name with colons, like this:
+
+```markdown
+:hamburger: :pizza: :beer: :sushi: :tropical_drink:
+```
+
+Which renders to:
+
+:hamburger: :pizza: :beer: :sushi: :tropical_drink:

@@ -17,23 +17,24 @@ You can alternatively view this file's [raw plaintext](https://raw.githubusercon
   - [Empahsis](#emphasis)
       - [Bold](#bold)
       - [Italics](#italics)
-      - [strikethrough](#strikethrough)
+      - [Strikethrough](#strikethrough)
 - [Links](#links)
-  - [Basic link](#basic-link)
-  - [Add a title](#add-a-title)
+  - [Basic Link](#basic-link)
+  - [Add a Title](#add-a-title)
   - [Named Anchors](#named-anchors)
 - [Blockquotes](#blockquotes)
+  - [Nested Blockquotes](#nested-blockquotes) 
 - [Lists](#lists)
   - [Unordered](#unordered)
   - [Ordered](#ordered)
 - [Tables](#tables)
-  - [Right aligned text](#right-aligned-text)
+  - [Right Aligned Text](#right-aligned-text)
 - [Images](#images)
 - [Code](#code)
-  - [Inline code](#inline-code)
-  - [Indented code](#indented-code)
-  - [Block code "fences"](#block-code-fences)
-  - [Syntax highlighting](#syntax-highlighting)
+  - [Inline Code](#inline-code)
+  - [Indented Code](#indented-code)
+  - [Block Code "Fences"](#block-code-fences)
+  - [Syntax Highlighting](#syntax-highlighting)
 - [Keyboard Keys](#keyboard-keys)
 
 ---
@@ -142,7 +143,7 @@ which renders to:
 _rendered as italicized text with underscores_  
 *rendered as italicized text with single asterisks*
 
-### strikethrough
+### Strikethrough
 In Github-Flavored Markdown (GFM) you can do strikethroughs by wrapping the text with double tildes: 
 
 ``` markdown
@@ -176,7 +177,7 @@ HTML:
 ```
 
 
-### Add a title
+### Add a Title
 
 ``` markdown
 [Upstage](https://github.com/upstage/ "Visit Upstage!")
@@ -234,7 +235,12 @@ Renders to:
 
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
 
-Blockquotes can also be nested:
+## Nested Blockquotes
+
+Blockquotes can be nested by using an incremental number of greater-than signs (`>`). For example, you will use one `>` for a 
+blockquote at the first level. To nest a blockquote, simply use two `>>`, to nest a third blockquote, use three `>>>`, and so on. 
+
+Here is an example:
 
 ``` markdown
 > Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue. 
@@ -245,7 +251,7 @@ odio non est accumsan facilisis. Aliquam id turpis in dolor tincidunt mollis ac 
 Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi. 
 ```
 
-Renders to:
+Which renders to:
 
 > Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue. 
 Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi. 
@@ -350,7 +356,7 @@ Renders to:
 | ext    | extension to be used for dest files. |
 
 
-### Right aligned text
+### Right Aligned Text
 
 Adding a colon on the right side of the dashes below any heading will right align text for that column.
 
@@ -408,7 +414,7 @@ With a reference later in the document defining the URL location:
 
 ## Code
 
-### Inline code
+### Inline Code
 Wrap inline snippets of code with a single accent grave character (aka "tick mark") `` ` ``.
 
 For example, this markup:
@@ -422,7 +428,7 @@ will render to:
 Render these section tags as inline code: `<section></section>`
 
 
-### Indented code
+### Indented Code
 
 Or indent several lines of code by at least four spaces, as in:
 
@@ -439,7 +445,7 @@ Or indent several lines of code by at least four spaces, as in:
     line 3 of code
 
 
-### Block code "fences"
+### Block Code "Fences"
 
 Use "fences"  ```` ``` ```` to block in multiple lines of code. 
 
@@ -462,7 +468,7 @@ HTML:
 </pre>
 ```
 
-### Syntax highlighting
+### Syntax Highlighting
 
 GFM, or "GitHub Flavored Markdown" also supports syntax highlighting. To activate it, simply add the file extension of the language you want to use directly after the first code "fence", ` ``` js `, and syntax highlighting will automatically be applied in the rendered HTML. For example, to apply syntax highlighting to JavaScript code:
 

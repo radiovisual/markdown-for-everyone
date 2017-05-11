@@ -138,6 +138,7 @@ will cause this line to appear on the line below.
 
 **Note:** This "two spaces" trick often trips up new users of Markdown, because spaces are invisible, so the rule is not obvious when reading Markdown files.
 
+**Note:** If you want to add your own linebreaks without having to manage invisible space characters in your file, then you can simply add the `<br />` tag wherever you want to add a linebreak, and your Markdown parser will honor it. 
 
 <br>
 <br>
